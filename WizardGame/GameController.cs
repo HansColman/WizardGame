@@ -244,7 +244,7 @@ namespace WizardGame
         }
         public bool IsLastRound(int currentRound)
         {
-            return service.isThisTheLastRound(currentRound);
+            return service.IsThisTheLastRound(currentRound);
         }
 
         public int SetPlayer4(int recieved, int requested)

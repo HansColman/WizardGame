@@ -766,6 +766,36 @@ namespace WizardGame
         }
         private void OnNextRoundClick(object sender, EventArgs e)
         {
+            switch (_controller.AmountPlayers)
+            {
+                case 3:
+                    setResultPlayer1(currentRound);
+                    setResultPlayer2(currentRound);
+                    setResultPlayer3(currentRound);
+                    break;
+                case 4:
+                    setResultPlayer1(currentRound);
+                    setResultPlayer2(currentRound);
+                    setResultPlayer3(currentRound);
+                    setResultPlayer4(currentRound);
+                    break;
+                case 5:
+                    setResultPlayer1(currentRound);
+                    setResultPlayer2(currentRound);
+                    setResultPlayer3(currentRound);
+                    setResultPlayer4(currentRound);
+                    setResultPlayer5(currentRound);
+                    break;
+                case 6:
+                    setResultPlayer1(currentRound);
+                    setResultPlayer2(currentRound);
+                    setResultPlayer3(currentRound);
+                    setResultPlayer4(currentRound);
+                    setResultPlayer5(currentRound);
+                    setResultPlayer6(currentRound);
+                    break;
+
+            }
             if (_controller.IsLastRound(currentRound))
             {
                 this.btnNextRound.Enabled = false;

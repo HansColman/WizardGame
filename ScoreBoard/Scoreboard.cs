@@ -29,12 +29,6 @@ namespace ScoreBoard
                 _requested = value;
             }
         }
-        public int Score
-        {
-            get
-            {
-                return score;
-            }
-        }
+        public int Score => score;
     }
 }
