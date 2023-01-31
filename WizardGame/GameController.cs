@@ -224,22 +224,19 @@ namespace WizardGame
                 MessageBox.Show(e.Message);
             }
         }
-        public int SetPlayer1(int recieved,int requested)
+        public int SetPlayer1(int recieved,int requested, bool nextRound = false)
         {
-            int result = 0;
-            result = service.SetResultPlayer1(recieved, requested);
+            int result = service.SetResultPlayer1(recieved, requested, nextRound);
             return result;
         }
-        public int SetPlayer2( int recieved, int requested)
+        public int SetPlayer2( int recieved, int requested, bool nextRaound = false)
         {
-            int result = 0;
-            result = service.SetResultPlayer2(recieved, requested);
+            int result = service.SetResultPlayer2(recieved, requested,nextRaound);
             return result;
         }
-        public int SetPlayer3(int recieved, int requested)
+        public int SetPlayer3(int recieved, int requested, bool nextRaound = false)
         {
-            int result = 0;
-            result = service.SetResultPlayer3(recieved, requested);
+            int result= service.SetResultPlayer3(recieved, requested,nextRaound);
             return result;
         }
         public bool IsLastRound(int currentRound)
@@ -247,22 +244,19 @@ namespace WizardGame
             return service.IsThisTheLastRound(currentRound);
         }
 
-        public int SetPlayer4(int recieved, int requested)
+        public int SetPlayer4(int recieved, int requested, bool nextRaound = false)
         {
-            int result = 0;
-            result = service.SetResultPlayer4(recieved, requested);
+            int result = service.SetResultPlayer4(recieved, requested, nextRaound);
             return result;
         }
-        public int SetPlayer5(int recieved, int requested)
+        public int SetPlayer5(int recieved, int requested, bool nextRaound = false)
         {
-            int result = 0;
-            result = service.SetResultPlayer5(recieved, requested);
+            int result = service.SetResultPlayer5(recieved, requested, nextRaound);
             return result;
         }
-        public int SetPlayer6(int recieved, int requested)
+        public int SetPlayer6(int recieved, int requested, bool nextRaound = false)
         {
-            int result = 0;
-            result = service.SetResultPlayer6(recieved, requested);
+            int result = service.SetResultPlayer6(recieved, requested, nextRaound);
             return result;
         }
     }

@@ -11,6 +11,8 @@ namespace ScoreBoard
         private Calculator calc;
         private int _requested;
         private int score;
+        
+        public bool Changed { get; set; }
 
         public Scoreboard()
         {
@@ -18,16 +20,17 @@ namespace ScoreBoard
         }
         public int Received
         {
-            set {
-                score += calc.calculate(_requested, value);
+            set
+            {
+                if (!Changed) { 
+                    score += calc.calculate(_requested, value);
+                    Changed = true;
+                }
             }
         }
         public string PlayersName { get; set; }
         public int Requested {
-            set
-            {
-                _requested = value;
-            }
+            set => _requested = value;
         }
         public int Score => score;
     }

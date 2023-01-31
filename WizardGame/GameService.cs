@@ -45,15 +45,18 @@ namespace WizardGame
         {
             scoreboards[0] = new ScoreBoard.Scoreboard
             {
-                PlayersName = player1Name
+                PlayersName = player1Name,
+                Changed = false
             };
             scoreboards[1] = new ScoreBoard.Scoreboard
             {
-                PlayersName = player2Name
+                PlayersName = player2Name,
+                Changed = false
             };
             scoreboards[2] = new ScoreBoard.Scoreboard
             {
-                PlayersName = player3Name
+                PlayersName = player3Name,
+                Changed = false
             };
         }
         /// <summary>
@@ -68,7 +71,8 @@ namespace WizardGame
             Play3Players(player1Name, player2Name, player3Name);
             scoreboards[3] = new ScoreBoard.Scoreboard
             {
-                PlayersName = player4Name
+                PlayersName = player4Name,
+                Changed = false
             };
         }
         /// <summary>
@@ -84,7 +88,8 @@ namespace WizardGame
             Play4Players(player1Name, player2Name, player3Name, player4Name);
             scoreboards[4] = new ScoreBoard.Scoreboard 
             { 
-                PlayersName = player5Name 
+                PlayersName = player5Name,
+                Changed = false
             };
         }
         /// <summary>
@@ -101,7 +106,8 @@ namespace WizardGame
             Play5Players(player1Name, player2Name, player3Name, player4Name, player5Name);
             scoreboards[5] = new ScoreBoard.Scoreboard 
             { 
-                PlayersName = player6Name 
+                PlayersName = player6Name,
+                Changed = false
             };
         }
         /// <summary>
@@ -134,40 +140,64 @@ namespace WizardGame
             }
             return result;
         }
-        public int SetResultPlayer1(int recieved, int requested)
+        public int SetResultPlayer1(int recieved, int requested, bool nextRound = false)
         {
             scoreboards[0].Requested = requested;
             scoreboards[0].Received= recieved;
+            if (nextRound)
+            {
+                scoreboards[0].Changed = false;  
+            }
             return scoreboards[0].Score;
         }
-        public int SetResultPlayer2(int recieved, int requested)
+        public int SetResultPlayer2(int recieved, int requested, bool nextRound = false)
         {
             scoreboards[1].Requested = requested;
             scoreboards[1].Received= recieved;
+            if (nextRound)
+            {
+                scoreboards[1].Changed = false;
+            }
             return scoreboards[1].Score;
         }
-        public int SetResultPlayer3(int recieced, int requested)
+        public int SetResultPlayer3(int recieced, int requested, bool nextRound = false)
         {
             scoreboards[2].Requested = requested;
             scoreboards[2].Received= recieced;
+            if (nextRound)
+            {
+                scoreboards[2].Changed = false;
+            }
             return scoreboards[2].Score;
         }
-        public int SetResultPlayer4(int recieced, int requested)
+        public int SetResultPlayer4(int recieced, int requested, bool nextRound = false)
         {
             scoreboards[3].Requested = requested;
             scoreboards[3].Received = recieced;
+            if (nextRound)
+            {
+                scoreboards[3].Changed = false;
+            }
             return scoreboards[3].Score;
         }
-        public int SetResultPlayer5(int recieced, int requested)
+        public int SetResultPlayer5(int recieced, int requested, bool nextRound = false)
         {
             scoreboards[4].Requested = requested;
             scoreboards[4].Received = recieced;
+            if (nextRound)
+            {
+                scoreboards[4].Changed = false;
+            }
             return scoreboards[4].Score;
         }
-        public int SetResultPlayer6(int recieced, int requested)
+        public int SetResultPlayer6(int recieced, int requested, bool nextRound = false)
         {
             scoreboards[5].Requested = requested;
             scoreboards[5].Received = recieced;
+            if (nextRound)
+            {
+                scoreboards[0].Changed = false;
+            }
             return scoreboards[5].Score;
         }
     }

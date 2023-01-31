@@ -769,7 +769,7 @@ namespace WizardGame
             switch (_controller.AmountPlayers)
             {
                 case 3:
-                    setResultPlayer1(currentRound);
+                    setResultPlayer1(currentRound, true);
                     setResultPlayer2(currentRound);
                     setResultPlayer3(currentRound);
                     break;
@@ -1005,7 +1005,7 @@ namespace WizardGame
             txtPlay6RoundRes.Name = "Play6Round" + currentRound.ToString() + "Res";
             txtPlay6RoundRes.Enabled = false;
         }
-        private void setResultPlayer1(int currentRound)
+        private void setResultPlayer1(int currentRound, bool nextRound = false)
         {
             foreach (Control ctr in this.tableLayoutPanel1.Controls)
             {
@@ -1013,12 +1013,12 @@ namespace WizardGame
                 {
                     if (ctr.Name == "Play1Round" + currentRound.ToString() + "Res")
                     {
-                        ctr.Text = _controller.SetPlayer1(Player1Recieved, Player1Requested).ToString();
+                        ctr.Text = _controller.SetPlayer1(Player1Recieved, Player1Requested, nextRound).ToString();
                     }
                 }
             }
         }
-        private void setResultPlayer2(int currentRound)
+        private void setResultPlayer2(int currentRound, bool nextRound = false)
         {
             foreach (Control ctr in this.tableLayoutPanel1.Controls)
             {
@@ -1026,12 +1026,12 @@ namespace WizardGame
                 {
                     if (ctr.Name == "Play2Round" + currentRound.ToString() + "Res")
                     {
-                        ctr.Text = _controller.SetPlayer2(Player2Recieved, Player2Requested).ToString();
+                        ctr.Text = _controller.SetPlayer2(Player2Recieved, Player2Requested,nextRound).ToString();
                     }
                 }
             }
         }
-        private void setResultPlayer3(int currentRound)
+        private void setResultPlayer3(int currentRound, bool nextRound = false)
         {
             foreach (Control ctr in this.tableLayoutPanel1.Controls)
             {
@@ -1039,12 +1039,12 @@ namespace WizardGame
                 {
                     if (ctr.Name == "Play3Round" + currentRound.ToString() + "Res")
                     {
-                        ctr.Text = _controller.SetPlayer3(Player3Recieved, Player3Requested).ToString();
+                        ctr.Text = _controller.SetPlayer3(Player3Recieved, Player3Requested,nextRound).ToString();
                     }
                 }
             }
         }
-        private void setResultPlayer4(int currentRound)
+        private void setResultPlayer4(int currentRound, bool nextRound = false)
         {
             foreach (Control ctr in this.tableLayoutPanel1.Controls)
             {
@@ -1052,12 +1052,12 @@ namespace WizardGame
                 {
                     if (ctr.Name == "Play4Round" + currentRound.ToString() + "Res")
                     {
-                        ctr.Text = _controller.SetPlayer4(Player4Recieved, Player4Requested).ToString();
+                        ctr.Text = _controller.SetPlayer4(Player4Recieved, Player4Requested, nextRound).ToString();
                     }
                 }
             }
         }
-        private void setResultPlayer5(int currentRound)
+        private void setResultPlayer5(int currentRound, bool nextRound = false)
         {
             foreach (Control ctr in this.tableLayoutPanel1.Controls)
             {
@@ -1065,12 +1065,12 @@ namespace WizardGame
                 {
                     if (ctr.Name == "Play5Round" + currentRound.ToString() + "Res")
                     {
-                        ctr.Text = _controller.SetPlayer5(Player5Recieved, Player5Requested).ToString();
+                        ctr.Text = _controller.SetPlayer5(Player5Recieved, Player5Requested, nextRound).ToString();
                     }
                 }
             }
         }
-        private void setResultPlayer6(int currentRound)
+        private void setResultPlayer6(int currentRound, bool nextRound = false)
         {
             foreach (Control ctr in this.tableLayoutPanel1.Controls)
             {
@@ -1078,7 +1078,7 @@ namespace WizardGame
                 {
                     if (ctr.Name == "Play6Round" + currentRound.ToString() + "Res")
                     {
-                        ctr.Text = _controller.SetPlayer6(Player6Recieved, Player6Requested).ToString();
+                        ctr.Text = _controller.SetPlayer6(Player6Recieved, Player6Requested, nextRound).ToString();
                     }
                 }
             }
