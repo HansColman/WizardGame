@@ -15,7 +15,7 @@ namespace WizardGame
             _NamePlayer4,
             _NamePlayer5,
             _NamePlayer6;
-        private GameService service;
+        private readonly GameService service;
         public GameController(IPlayersView view)
         {
             view.SetController(this);
@@ -23,10 +23,7 @@ namespace WizardGame
         }
         public int AmountPlayers
         {
-            get
-            {
-                return service.AmountOfPlayers;
-            }
+            get => service.AmountOfPlayers;
             set
             {
                 try
@@ -41,92 +38,57 @@ namespace WizardGame
         }
         public string NamePlayer1
         {
-            get
-            {
-                return _NamePlayer1;
-            }
+            get => _NamePlayer1;
             set
             {
                 if (!string.IsNullOrEmpty(value))
-                {
                     _NamePlayer1 = value;
-                }
                 else
-                {
                     MessageBox.Show("Name Player1 Can be empty");
-                }
             }
         }
         public string NamePlayer2
         {
-            get
-            {
-                return _NamePlayer2;
-            }
+            get => _NamePlayer2;
             set
             {
                 if (!string.IsNullOrEmpty(value))
-                {
                     _NamePlayer2 = value;
-                }
                 else
-                {
                     MessageBox.Show("Name Player2 Can be empty");
-                }
             }
         }
         public string NamePlayer3
         {
-            get
-            {
-                return _NamePlayer3;
-            }
+            get => _NamePlayer3;
             set
             {
                 if (!string.IsNullOrEmpty(value))
-                {
                     _NamePlayer3 = value;
-                }
                 else
-                {
                     MessageBox.Show("Name Player3 Can be empty");
-                }
             }
         }
         public string NamePlayer4
         {
-            get
-            {
-                return _NamePlayer4;
-            }
+            get => _NamePlayer4;
             set
             {
                 if (!string.IsNullOrEmpty(value))
-                {
                     _NamePlayer4 = value;
-                }
                 else
-                {
                     MessageBox.Show("Name Player4 Can be empty");
-                }
             }
         }
         public string NamePlayer5
         {
-            get
-            {
-                return _NamePlayer5;
-            }
+            get => _NamePlayer5;
             set
             {
                 if (!string.IsNullOrEmpty(value))
-                {
                     _NamePlayer5 = value;
-                }
                 else
-                {
                     MessageBox.Show("Name Player5 Can be empty");
-                }
             }
         }
         /// <summary>
@@ -134,20 +96,13 @@ namespace WizardGame
         /// </summary>
         public string NamePlayer6
         {
-            get
-            {
-                return _NamePlayer6;
-            }
+            get => _NamePlayer6;
             set
             {
                 if (!string.IsNullOrEmpty(value))
-                {
                     _NamePlayer6 = value;
-                }
                 else
-                {
                     MessageBox.Show("Name Player6 Can be empty");
-                }
             }
         }
         /// <summary>

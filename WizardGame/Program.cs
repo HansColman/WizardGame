@@ -16,9 +16,11 @@ namespace WizardGame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Players view = new Players();
-            view.Visible = false;
-            GameController controller = new GameController(view);
+            Players view = new Players
+            {
+                Visible = false
+            };
+            _ = new GameController(view);
             Application.Run(view);
         }
     }

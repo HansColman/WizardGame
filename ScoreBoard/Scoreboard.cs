@@ -9,7 +9,7 @@ namespace ScoreBoard
     public class Scoreboard
     {
         private Calculator calc;
-        private int _requested;
+        private int _requested, _recieved;
         private int score;
         
         public bool Changed { get; set; }
@@ -17,21 +17,37 @@ namespace ScoreBoard
         public Scoreboard()
         {
             calc = new Calculator();
+            Changed = true;
         }
-        public int Received
+        public int? Received
         {
             set
             {
-                if (!Changed) { 
-                    score += calc.calculate(_requested, value);
-                    Changed = true;
-                }
+                if (value != null)
+                    _recieved = (int)value;
+                else
+                    throw new ArgumentNullException("Received value cannot be null");
             }
         }
         public string PlayersName { get; set; }
-        public int Requested {
-            set => _requested = value;
+        public int? Requested
+        {
+            set
+            {
+                if (value != null)
+                    _requested = (int)value;
+                else
+                    throw new ArgumentNullException("Requested value cannot be null");
+            }
         }
-        public int Score => score;
+        public int Score
+        {
+            get
+            {
+                if (Changed)
+                    return score += calc.calculate(_requested, _recieved); 
+                return score;
+            }
+        }
     }
 }

@@ -1,18 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ScoreBoard;
 
 namespace WizardGame
 {
     public class GameService
     {
-        private ScoreBoard.Scoreboard[] scoreboards;
+        private readonly Scoreboard[] scoreboards;
         private int _amountPlayers;
         public GameService()
         {
-            scoreboards = new ScoreBoard.Scoreboard[6];
+            scoreboards = new Scoreboard[6];
         }
         /// <summary>
         /// The amount of players
@@ -43,20 +40,17 @@ namespace WizardGame
         /// <param name="player3Name">The name of the third player</param>
         public void Play3Players(string player1Name, string player2Name, string player3Name)
         {
-            scoreboards[0] = new ScoreBoard.Scoreboard
+            scoreboards[0] = new Scoreboard
             {
-                PlayersName = player1Name,
-                Changed = false
+                PlayersName = player1Name
             };
-            scoreboards[1] = new ScoreBoard.Scoreboard
+            scoreboards[1] = new Scoreboard
             {
-                PlayersName = player2Name,
-                Changed = false
+                PlayersName = player2Name
             };
-            scoreboards[2] = new ScoreBoard.Scoreboard
+            scoreboards[2] = new Scoreboard
             {
-                PlayersName = player3Name,
-                Changed = false
+                PlayersName = player3Name
             };
         }
         /// <summary>
@@ -69,10 +63,9 @@ namespace WizardGame
         public void Play4Players(string player1Name, string player2Name, string player3Name, string player4Name)
         {
             Play3Players(player1Name, player2Name, player3Name);
-            scoreboards[3] = new ScoreBoard.Scoreboard
+            scoreboards[3] = new Scoreboard
             {
-                PlayersName = player4Name,
-                Changed = false
+                PlayersName = player4Name
             };
         }
         /// <summary>
@@ -86,10 +79,9 @@ namespace WizardGame
         public void Play5Players(string player1Name, string player2Name, string player3Name, string player4Name, string player5Name)
         {
             Play4Players(player1Name, player2Name, player3Name, player4Name);
-            scoreboards[4] = new ScoreBoard.Scoreboard 
+            scoreboards[4] = new Scoreboard 
             { 
-                PlayersName = player5Name,
-                Changed = false
+                PlayersName = player5Name
             };
         }
         /// <summary>
@@ -104,10 +96,9 @@ namespace WizardGame
         public void Play6Players(string player1Name, string player2Name, string player3Name, string player4Name, string player5Name, string player6Name)
         {
             Play5Players(player1Name, player2Name, player3Name, player4Name, player5Name);
-            scoreboards[5] = new ScoreBoard.Scoreboard 
+            scoreboards[5] = new Scoreboard 
             { 
-                PlayersName = player6Name,
-                Changed = false
+                PlayersName = player6Name
             };
         }
         /// <summary>

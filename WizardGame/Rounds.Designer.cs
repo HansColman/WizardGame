@@ -1,13 +1,38 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace WizardGame
 {
     partial class Rounds
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Button btnNextRound;
+        //Play1 Rec
+        private Label lblPlay1Rec;
+        //Play1 Req
+        private Label lblPlay1Req;
+        //Play2 Rec
+        private Label lblPlay2Rec;
+        //play2 Req 
+        private Label lblPlay2Req;
+        //Play3 Rec
+        private Label lblPlay3Rec;
+        //play3 Req 
+        private Label lblPlay3Req;
+        //play4 Rec
+        private Label lblPlay4Rec;
+        //play4 Req
+        private Label lblPlay4Req;
+        //play5 rec
+        private Label lblPlay5Rec;
+        //play5 req
+        private Label lblPlay5Req;
+        //Play6 Rec
+        private Label lblPlay6Rec;
+        //Play6 Req
+        private Label lblPlay6Req;
+
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -29,44 +54,44 @@ namespace WizardGame
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblPlay1Rec = new System.Windows.Forms.Label();
-            this.lblPlay1Req = new System.Windows.Forms.Label();
-            this.lblPlay2Rec = new System.Windows.Forms.Label();
-            this.lblPlay2Req = new System.Windows.Forms.Label();
-            this.lblPlay3Rec = new System.Windows.Forms.Label();
-            this.lblPlay3Req = new System.Windows.Forms.Label();
-            this.btnNextRound = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new TableLayoutPanel();
+            this.lblPlay1Rec = new Label();
+            this.lblPlay1Req = new Label();
+            this.lblPlay2Rec = new Label();
+            this.lblPlay2Req = new Label();
+            this.lblPlay3Rec = new Label();
+            this.lblPlay3Req = new Label();
+            this.btnNextRound = new Button();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.ColumnCount = 19;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
+            this.tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1800, 70);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -124,43 +149,18 @@ namespace WizardGame
             // Round1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1932, 320);
             this.Controls.Add(this.btnNextRound);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Rounds";
             this.Text = "Round1";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Round1_FormClosed);
+            this.FormClosed += new FormClosedEventHandler(this.Round1_FormClosed);
             this.ResumeLayout(false);
 
         }
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button btnNextRound;
-        //Play1 Rec
-        private System.Windows.Forms.Label lblPlay1Rec;
-        //Play1 Req
-        private System.Windows.Forms.Label lblPlay1Req;
-        //Play2 Rec
-        private System.Windows.Forms.Label lblPlay2Rec;
-        //play2 Req 
-        private System.Windows.Forms.Label lblPlay2Req;
-        //Play3 Rec
-        private System.Windows.Forms.Label lblPlay3Rec;
-        //play3 Req 
-        private System.Windows.Forms.Label lblPlay3Req;
-        //play4 Rec
-        private System.Windows.Forms.Label lblPlay4Rec;
-        //play4 Req
-        private System.Windows.Forms.Label lblPlay4Req;
-        //play5 rec
-        private System.Windows.Forms.Label lblPlay5Rec;
-        //play5 req
-        private System.Windows.Forms.Label lblPlay5Req;
-        //Play6 Rec
-        private System.Windows.Forms.Label lblPlay6Rec;
-        //Play6 Req
-        private System.Windows.Forms.Label lblPlay6Req;
+        
     }
 }

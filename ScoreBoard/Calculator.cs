@@ -17,11 +17,10 @@ namespace ScoreBoard
             if (requested == received){
 			    result = bonus + (received * adition);
             }else{
-                if (received > requested){
+                if (received > requested)
 				    result = -((received -requested) * adition);
-                }else{
+                else
 				    result = (received -requested) * adition;
-                }
             }
             return result;
         }

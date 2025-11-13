@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace WizardGame
 {
@@ -8,6 +9,20 @@ namespace WizardGame
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private Panel pnl1;
+        private TextBox txtPlayer6;
+        private Label lblPlayer6;
+        private TextBox txtPlayer5;
+        private Label lblPlayer5;
+        private TextBox txtPlayer4;
+        private Label lblPlayer4;
+        private TextBox txtPlayer3;
+        private Label lblPlayer3;
+        private TextBox txtPlayer2;
+        private Label lblPlayer2;
+        private TextBox txtPlayer1;
+        private Label lblPlayer1;
+        private Button btnNext;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -24,20 +39,20 @@ namespace WizardGame
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
-            this.pnl1 = new System.Windows.Forms.Panel();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.txtPlayer2 = new System.Windows.Forms.TextBox();
-            this.lblPlayer2 = new System.Windows.Forms.Label();
-            this.txtPlayer1 = new System.Windows.Forms.TextBox();
-            this.lblPlayer1 = new System.Windows.Forms.Label();
-            this.lblPlayer3 = new System.Windows.Forms.Label();
-            this.txtPlayer3 = new System.Windows.Forms.TextBox();
-            this.lblPlayer4 = new System.Windows.Forms.Label();
-            this.txtPlayer4 = new System.Windows.Forms.TextBox();
-            this.lblPlayer5 = new System.Windows.Forms.Label();
-            this.txtPlayer5 = new System.Windows.Forms.TextBox();
-            this.lblPlayer6 = new System.Windows.Forms.Label();
-            this.txtPlayer6 = new System.Windows.Forms.TextBox();
+            this.pnl1 = new Panel();
+            this.btnNext = new Button();
+            this.txtPlayer2 = new TextBox();
+            this.lblPlayer2 = new Label();
+            this.txtPlayer1 = new TextBox();
+            this.lblPlayer1 = new Label();
+            this.lblPlayer3 = new Label();
+            this.txtPlayer3 = new TextBox();
+            this.lblPlayer4 = new Label();
+            this.txtPlayer4 = new TextBox();
+            this.lblPlayer5 = new Label();
+            this.txtPlayer5 = new TextBox();
+            this.lblPlayer6 = new Label();
+            this.txtPlayer6 = new TextBox();
             this.pnl1.SuspendLayout();
             this.SuspendLayout();
             // pnl1
@@ -122,7 +137,7 @@ namespace WizardGame
             this.txtPlayer6.TabIndex = 0;
             // Names
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 295);
             this.Controls.Add(this.pnl1);
             this.Name = "Names";
@@ -133,19 +148,6 @@ namespace WizardGame
         }
         #endregion
 
-        private System.Windows.Forms.Panel pnl1;
-        private System.Windows.Forms.TextBox txtPlayer6;
-        private System.Windows.Forms.Label lblPlayer6;
-        private System.Windows.Forms.TextBox txtPlayer5;
-        private System.Windows.Forms.Label lblPlayer5;
-        private System.Windows.Forms.TextBox txtPlayer4;
-        private System.Windows.Forms.Label lblPlayer4;
-        private System.Windows.Forms.TextBox txtPlayer3;
-        private System.Windows.Forms.Label lblPlayer3;
-        private System.Windows.Forms.TextBox txtPlayer2;
-        private System.Windows.Forms.Label lblPlayer2;
-        private System.Windows.Forms.TextBox txtPlayer1;
-        private System.Windows.Forms.Label lblPlayer1;
-        private System.Windows.Forms.Button btnNext;
+        
     }
 }

@@ -9,6 +9,12 @@ namespace WizardGame
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private Label label1;
+        private RadioButton rBtn3;
+        private RadioButton rBtn4;
+        private RadioButton rBTn5;
+        private RadioButton rBtn6;
+        private Button btnNext;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -31,12 +37,12 @@ namespace WizardGame
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.rBtn3 = new System.Windows.Forms.RadioButton();
-            this.rBtn4 = new System.Windows.Forms.RadioButton();
-            this.rBTn5 = new System.Windows.Forms.RadioButton();
-            this.rBtn6 = new System.Windows.Forms.RadioButton();
-            this.btnNext = new System.Windows.Forms.Button();
+            this.label1 = new Label();
+            this.rBtn3 = new RadioButton();
+            this.rBtn4 = new RadioButton();
+            this.rBTn5 = new RadioButton();
+            this.rBtn6 = new RadioButton();
+            this.btnNext = new Button();
             this.SuspendLayout();
             // 
             // lblPlay2Rec
@@ -109,7 +115,7 @@ namespace WizardGame
             // Players
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(269, 152);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.rBtn6);
@@ -119,7 +125,7 @@ namespace WizardGame
             this.Controls.Add(this.label1);
             this.Name = "Players";
             this.Text = "Welcome";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Round1_FormClosed);
+            this.FormClosed += new FormClosedEventHandler(this.Round1_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,12 +135,6 @@ namespace WizardGame
         {
             Environment.Exit(0);
         }
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton rBtn3;
-        private System.Windows.Forms.RadioButton rBtn4;
-        private System.Windows.Forms.RadioButton rBTn5;
-        private System.Windows.Forms.RadioButton rBtn6;
-        private System.Windows.Forms.Button btnNext;
     }
 }
 

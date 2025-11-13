@@ -55,11 +55,11 @@ namespace UnitTestScoreBoard
             Assert.AreEqual(-10, result);
             board.Requested = 1;
             board.Received = 1;
-            result += board.Score;
+            result = board.Score;
             Assert.AreEqual(20, result);
             board.Requested = 2;
             board.Received = 2;
-            result += board.Score;
+            result = board.Score;
             Assert.AreEqual(60, result);
         }
     }

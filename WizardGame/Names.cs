@@ -145,6 +145,8 @@ namespace WizardGame
             this.txtPlayer3.Size = new System.Drawing.Size(214, 22);
             this.txtPlayer3.TabIndex = 5;
             this.txtPlayer3.LostFocus += new System.EventHandler(this.OnTxt3LostFocus);
+            //btnNext
+            btnNext.TabIndex = 6;
         }
         public void play4Players()
         {
@@ -164,6 +166,8 @@ namespace WizardGame
             this.txtPlayer4.Size = new System.Drawing.Size(214, 22);
             this.txtPlayer4.TabIndex = 7;
             this.txtPlayer4.LostFocus += new System.EventHandler(this.OnTxt4LostFocus);
+            //btnNext
+            btnNext.TabIndex = 8;
         }
         public void play5Players()
         {
@@ -183,6 +187,8 @@ namespace WizardGame
             this.txtPlayer5.Size = new System.Drawing.Size(214, 22);
             this.txtPlayer5.TabIndex = 9;
             this.txtPlayer5.LostFocus += new System.EventHandler(this.OnTxt5LostFocus);
+            //btnNext
+            btnNext.TabIndex = 10;
         }
         public void play6Players()
         {
@@ -202,6 +208,8 @@ namespace WizardGame
             this.txtPlayer6.Size = new System.Drawing.Size(214, 22);
             this.txtPlayer6.TabIndex = 11;
             this.txtPlayer6.LostFocus += new System.EventHandler(this.OnTxt6LostFocus);
+            //btnNext
+            btnNext.TabIndex = 12;
         }
         private void btnNext_Click(object sender, EventArgs e)
         {

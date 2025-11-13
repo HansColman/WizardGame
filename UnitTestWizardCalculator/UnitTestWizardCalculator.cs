@@ -23,6 +23,14 @@ namespace UnitTestWizardCalculator
             Assert.AreEqual(-10, result);
         }
         [TestMethod]
+        public void TestNegativeCalculateTwo()
+        {
+            ScoreBoard.Calculator calc;
+            calc = new ScoreBoard.Calculator();
+            int result = calc.calculate(0, 1);
+            Assert.AreEqual(-10, result);
+        }
+        [TestMethod]
         public void TestMultipleScenarios()
         {
             ScoreBoard.Calculator Calc = new ScoreBoard.Calculator();
